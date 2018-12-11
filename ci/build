@@ -4,3 +4,5 @@ set -e -x
 pushd go-app
   go mod vendor
 popd
+
+cp -R go-app built-go-app

@@ -10,7 +10,6 @@ inputs:
 
 outputs:
   - name: built-go-app
-    path: go-app
 
 run:
   path: go-app/ci/build
