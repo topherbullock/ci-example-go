@@ -9,7 +9,7 @@ inputs:
 - name: go-app
 
 outputs:
-  - name: built-go-app
+  - name: ci-example-go
 
 run:
   path: go-app/ci/build

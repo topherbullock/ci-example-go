@@ -5,4 +5,4 @@ pushd go-app
   go mod vendor
 popd
 
-cp -R go-app built-go-app
+cp -R go-app/* ci-example-go/
