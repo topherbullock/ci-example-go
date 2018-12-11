@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e -u
+
+export GOPATH=$PWD/gopath
+export PATH=$PWD/gopath/bin:$PATH
+
+pushd go-app
+  go mod download
+  go install github.com/onsi/ginkgo/ginkgo
+
+  ginkgo -r
+popd
