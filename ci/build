@@ -2,7 +2,7 @@
 set -e -x
 
 pushd go-app
-  go mod vendor
+  go build
 popd
 
 cp -R go-app/* ci-example-go/
