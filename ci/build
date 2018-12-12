@@ -2,7 +2,7 @@
 set -e -x
 
 pushd go-app
-  go build
+  go build main.go
 popd
 
 cp -R go-app/* ci-example-go/
