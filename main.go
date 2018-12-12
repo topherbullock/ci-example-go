@@ -1,22 +1,24 @@
 package main
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/go-martini/martini"
 )
 
 func main() {
+	m := martini.Classic()
+	m.Get("/", func() string {
+		return GetMessage()
+	})
+	m.Run()
+}
+
+func GetMessage() string {
 	message := os.Getenv("MESSAGE")
 	if message == "" {
 		message = "Hello world"
 	}
 
-	m := martini.Classic()
-	m.Get("/", func() string {
-		fmt.Println(message)
-		return message
-	})
-	m.Run()
+	return message
 }
