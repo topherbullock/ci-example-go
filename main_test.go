@@ -9,7 +9,7 @@ import (
 var _ = Describe("Main", func() {
 	Describe("GetMessage", func() {
 		It("returns the correct message", func() {
-			Expect(GetMessage()).To(Equal("Hello world"))
+			Expect(GetMessage()).To(Equal("Hello go!"))
 		})
 	})
 })

@@ -17,7 +17,7 @@ func main() {
 func GetMessage() string {
 	message := os.Getenv("MESSAGE")
 	if message == "" {
-		message = "Hello world"
+		message = "Hello go!"
 	}
 
 	return message
