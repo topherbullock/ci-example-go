@@ -5,3 +5,5 @@ applications:
   memory: 128M
   random-route: true
   buildpack: binary_buildpack
+  env:
+    MESSAGE: "HELLO CF!"
